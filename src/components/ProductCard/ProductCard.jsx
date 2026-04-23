@@ -37,8 +37,6 @@ const ProductCard = ({ product }) => {
       >
         <img src={isFavourite ? whiteHeart : heart} />
       </div>
-
-      {/* <img src={product.images[0]} className="w-62 h-62 object-cover" /> */}
       <div className="p-2 flex flex-col justify-between h-40">
         <div>
           <p className="text-gray-content text-sm">{product.make}</p>

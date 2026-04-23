@@ -7,11 +7,11 @@ const Footer = () => {
   return (
     <div className="border-t border-second-color flex flex-col justify-center items-center">
       <div className="w-3/4 flex justify-between text-xs py-5 border-b border-second-color">
-        {footer.map((group, index) => (
-          <div key={index} className="space-y-0.5">
+        {footer.map((group) => (
+          <div key={group.id} className="space-y-0.5">
             <p className="font-medium text-sm mb-2">{group.name}</p>
-            {group.links.map((link, index) => (
-              <Link key={index} href={link.ref} content={link.content} />
+            {group.links.map((link) => (
+              <Link key={link.id} href={link.ref} content={link.content} />
             ))}
           </div>
         ))}

@@ -56,9 +56,9 @@ const Select = ({ list, label, isOneline }) => {
       </div>
       {isOpen && (
         <div className="absolute border border-second-color mt-0.5 rounded-lg space-y-1 w-full bg-white">
-          {list.map((item, index) => (
+          {list.map((item) => (
             <div
-              key={index}
+              key={item}
               className="hover:bg-input px-2 py-1 cursor-pointer"
               onClick={() => handleSelectItem(item)}
             >
